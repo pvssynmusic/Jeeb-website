@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 import { Frown } from 'lucide-react';
 
 // Custom SVG Logo Component
-const CustomLogo: React.FC = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="w-full h-full" data-magicpath-id="0" data-magicpath-path="LandingPage.tsx">
-    <path d="M110,10 L115,30 L130,15 L135,40 L155,25 L150,50 L170,40 L160,65 L180,60 L170,85 L185,90 L170,110 L185,120 L165,130 L175,150 L150,145 L155,170 L130,160 L130,185 L110,175 L110,200 L90,185 L85,210 L65,190 L60,215 L50,190 L45,215 L30,185 L20,210 L10,180 L0,190 L5,160 L-10,170 L0,145 L-15,140 L0,120 L-10,110 L10,100 L0,80 L20,85 L10,60 L30,65 L20,40 L45,50 L40,20 L65,30 L60,0 L90,15 Z" fill="currentColor" data-magicpath-id="1" data-magicpath-path="LandingPage.tsx" />
+const CustomLogo: React.FC = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="w-full h-full">
+    <path d="M110,10 L115,30 L130,15 L135,40 L155,25 L150,50 L170,40 L160,65 L180,60 L170,85 L185,90 L170,110 L185,120 L165,130 L175,150 L150,145 L155,170 L130,160 L130,185 L110,175 L110,200 L90,185 L85,210 L65,190 L60,215 L50,190 L45,215 L30,185 L20,210 L10,180 L0,190 L5,160 L-10,170 L0,145 L-15,140 L0,120 L-10,110 L10,100 L0,80 L20,85 L10,60 L30,65 L20,40 L45,50 L40,20 L65,30 L60,0 L90,15 Z" fill="currentColor" />
   </svg>;
 export const LandingPage: React.FC = () => {
-  return <div className="min-h-screen bg-pink-50 relative overflow-hidden" data-magicpath-id="2" data-magicpath-path="LandingPage.tsx">
+  return <div className="min-h-screen bg-pink-50 relative overflow-hidden">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 p-6" data-magicpath-id="3" data-magicpath-path="LandingPage.tsx">
+      <header className="fixed top-0 left-0 right-0 z-50 p-6">
         <nav className="flex items-center justify-between max-w-7xl mx-auto" style={{
         background: "#2f332a00",
         paddingTop: "",
         marginTop: "10px"
-      }} data-magicpath-id="4" data-magicpath-path="LandingPage.tsx">
+      }}>
           {/* Logo */}
           <motion.div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center" whileHover={{
           scale: 1.05
@@ -23,19 +23,19 @@ export const LandingPage: React.FC = () => {
         }} style={{
           background: "#faf463",
           color: "#1f1f1f"
-        }} data-magicpath-id="5" data-magicpath-path="LandingPage.tsx">
-            <CustomLogo data-magicpath-id="6" data-magicpath-path="LandingPage.tsx" />
+        }}>
+            <CustomLogo />
           </motion.div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-3" data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">
+          <div className="hidden md:flex items-center space-x-3">
             {['About', 'Services', 'Blog', 'FAQ'].map(item => <motion.button key={item} className="px-6 py-3 bg-purple-900 text-pink-50 rounded-full font-medium hover:bg-purple-800 transition-colors" whileHover={{
             scale: 1.02
           }} whileTap={{
             scale: 0.98
           }} style={{
             display: "none"
-          }} data-magicpath-id="8" data-magicpath-path="LandingPage.tsx">
+          }}>
                 {item}
               </motion.button>)}
           </div>
@@ -51,13 +51,13 @@ export const LandingPage: React.FC = () => {
           fontFamily: "Space Grotesk",
           textAlign: "center",
           justifyContent: "center"
-        }} data-magicpath-id="9" data-magicpath-path="LandingPage.tsx">Sign Up</motion.button>
+        }}>Sign Up</motion.button>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <main className="flex items-center justify-center min-h-screen px-6" data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">
-        <div className="text-center max-w-4xl mx-auto" data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">
+      <main className="flex items-center justify-center min-h-screen px-6">
+        <div className="text-center max-w-4xl mx-auto">
           <motion.h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-purple-900 leading-tight mb-12" initial={{
           opacity: 0,
           y: 30
@@ -74,7 +74,7 @@ export const LandingPage: React.FC = () => {
           marginTop: "60px",
           fontFamily: "Crimson Text",
           fontSize: "90px"
-        }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">Read between the <em data-magicpath-id="13" data-magicpath-path="LandingPage.tsx">lines</em>.</motion.h1>
+        }}>Read between the <em>lines</em>.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
           opacity: 0,
@@ -103,17 +103,17 @@ export const LandingPage: React.FC = () => {
           paddingLeft: "60px",
           paddingRight: "60px",
           marginTop: "50px"
-        }} data-magicpath-id="14" data-magicpath-path="LandingPage.tsx">
+        }}>
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
-          }} data-magicpath-id="15" data-magicpath-path="LandingPage.tsx">
-              <Frown className="w-6 h-6 text-purple-900" data-magicpath-id="16" data-magicpath-path="LandingPage.tsx" />
+          }}>
+              <Frown className="w-6 h-6 text-purple-900" />
             </div>Join Waitlist</motion.button>
         </div>
       </main>
 
       {/* Made in Framer Badge */}
-      <div className="fixed bottom-6 right-6 z-50" data-magicpath-id="17" data-magicpath-path="LandingPage.tsx">
+      <div className="fixed bottom-6 right-6 z-50">
         <motion.div className="bg-white rounded-full px-4 py-2 shadow-md border border-gray-200" initial={{
         opacity: 0,
         scale: 0.8
@@ -125,22 +125,22 @@ export const LandingPage: React.FC = () => {
         delay: 1
       }} style={{
         display: "none"
-      }} data-magicpath-id="18" data-magicpath-path="LandingPage.tsx">
-          <span className="text-sm font-medium text-gray-700 flex items-center" data-magicpath-id="19" data-magicpath-path="LandingPage.tsx">
-            <span className="mr-2" data-magicpath-id="20" data-magicpath-path="LandingPage.tsx">🖼️</span>
+      }}>
+          <span className="text-sm font-medium text-gray-700 flex items-center">
+            <span className="mr-2">🖼️</span>
             Made in Framer
           </span>
         </motion.div>
       </div>
 
       {/* Mobile Navigation Menu (hidden by default, can be toggled) */}
-      <div className="md:hidden fixed top-20 left-6 right-6 z-40" data-magicpath-id="21" data-magicpath-path="LandingPage.tsx">
+      <div className="md:hidden fixed top-20 left-6 right-6 z-40">
         <div className="bg-white rounded-2xl shadow-lg p-4 space-y-2" style={{
         display: "none"
-      }} data-magicpath-id="22" data-magicpath-path="LandingPage.tsx">
+      }}>
           {['About', 'Services', 'Blog', 'FAQ'].map(item => <button key={item} className="w-full px-4 py-3 text-purple-900 font-medium rounded-xl hover:bg-pink-50 transition-colors text-left" style={{
           display: "none"
-        }} data-magicpath-id="23" data-magicpath-path="LandingPage.tsx">
+        }}>
               {item}
             </button>)}
         </div>
