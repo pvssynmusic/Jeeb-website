@@ -92,7 +92,6 @@ export const LandingPage: React.FC = () => {
           background: "#f9f363",
           color: "#1f1f1f",
           height: "100px",
-          marginTop: "100px",
           paddingTop: "60px",
           paddingLeft: "70px",
           paddingRight: "70px",
@@ -100,7 +99,8 @@ export const LandingPage: React.FC = () => {
           fontSize: "36px",
           fontWeight: "400",
           fontStyle: "normal",
-          fontFamily: "Space Grotesk"
+          fontFamily: "Space Grotesk",
+          marginTop: "70px"
         }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
