@@ -67,7 +67,7 @@ export const LandingPage: React.FC = () => {
           color: "#1f1f1f",
           fontWeight: "400",
           fontStyle: "normal"
-        }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">Read between the lines</motion.h1>
+        }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">Read between the lines.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
           opacity: 0,
@@ -88,7 +88,9 @@ export const LandingPage: React.FC = () => {
           color: "#1f1f1f",
           fontFamily: "Space Grotesk"
         }} data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">
-            <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">
+            <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" data-magicpath-id="12" data-magicpath-path="LandingPage.tsx" style={{
+            display: "none"
+          }}>
               <Frown className="w-6 h-6 text-purple-900" data-magicpath-id="13" data-magicpath-path="LandingPage.tsx" />
             </div>Join Waitlist</motion.button>
         </div>
