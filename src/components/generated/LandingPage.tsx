@@ -89,11 +89,11 @@ export const LandingPage: React.FC = () => {
           fontFamily: "Space Grotesk",
           paddingTop: "",
           height: "80px",
-          marginTop: "0px"
+          marginTop: "60px"
         }} data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">
-            <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" data-magicpath-id="12" data-magicpath-path="LandingPage.tsx" style={{
+            <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
-          }}>
+          }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">
               <Frown className="w-6 h-6 text-purple-900" data-magicpath-id="13" data-magicpath-path="LandingPage.tsx" />
             </div>Join Waitlist</motion.button>
         </div>
@@ -110,9 +110,9 @@ export const LandingPage: React.FC = () => {
       }} transition={{
         duration: 0.5,
         delay: 1
-      }} data-magicpath-id="15" data-magicpath-path="LandingPage.tsx" style={{
+      }} style={{
         display: "none"
-      }}>
+      }} data-magicpath-id="15" data-magicpath-path="LandingPage.tsx">
           <span className="text-sm font-medium text-gray-700 flex items-center" data-magicpath-id="16" data-magicpath-path="LandingPage.tsx">
             <span className="mr-2" data-magicpath-id="17" data-magicpath-path="LandingPage.tsx">🖼️</span>
             Made in Framer
