@@ -21,7 +21,9 @@ export const LandingPage: React.FC = () => {
             scale: 1.02
           }} whileTap={{
             scale: 0.98
-          }} data-magicpath-id="6" data-magicpath-path="LandingPage.tsx">
+          }} data-magicpath-id="6" data-magicpath-path="LandingPage.tsx" style={{
+            display: "none"
+          }}>
                 {item}
               </motion.button>)}
           </div>
@@ -31,9 +33,7 @@ export const LandingPage: React.FC = () => {
           scale: 1.02
         }} whileTap={{
           scale: 0.98
-        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">
-            Get Support
-          </motion.button>
+        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">Join Waitlist</motion.button>
         </nav>
       </header>
 
@@ -49,11 +49,11 @@ export const LandingPage: React.FC = () => {
         }} transition={{
           duration: 0.8,
           ease: "easeOut"
-        }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">
-            Crushed by
-            <br data-magicpath-id="11" data-magicpath-path="LandingPage.tsx" />
-            Life's Demands?
-          </motion.h1>
+        }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx" style={{
+          color: "oklch(75.72% 0.16 108.53deg)",
+          fontFamily: "Crimson Text",
+          fontSize: "130px"
+        }}>Read between the lines<br data-magicpath-id="11" data-magicpath-path="LandingPage.tsx" />Read between the lines</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
           opacity: 0,
