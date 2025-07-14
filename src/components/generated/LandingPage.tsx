@@ -73,7 +73,7 @@ export const LandingPage: React.FC = () => {
           fontStyle: "normal",
           marginTop: "60px",
           fontFamily: "Crimson Text",
-          fontSize: "150px"
+          fontSize: "90px"
         }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">Read between the <em data-magicpath-id="13" data-magicpath-path="LandingPage.tsx">lines</em>.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
@@ -94,15 +94,15 @@ export const LandingPage: React.FC = () => {
           background: "#f9f363",
           color: "#1f1f1f",
           height: "100px",
-          paddingTop: "60px",
-          paddingLeft: "70px",
-          paddingRight: "70px",
-          paddingBottom: "60px",
-          fontSize: "36px",
           fontWeight: "400",
           fontStyle: "normal",
           fontFamily: "Space Grotesk",
-          marginTop: "70px"
+          fontSize: "27px",
+          paddingTop: "40px",
+          paddingBottom: "40px",
+          paddingLeft: "60px",
+          paddingRight: "60px",
+          marginTop: "50px"
         }} data-magicpath-id="14" data-magicpath-path="LandingPage.tsx">
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
