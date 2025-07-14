@@ -110,7 +110,9 @@ export const LandingPage: React.FC = () => {
       }} transition={{
         duration: 0.5,
         delay: 1
-      }} data-magicpath-id="15" data-magicpath-path="LandingPage.tsx">
+      }} data-magicpath-id="15" data-magicpath-path="LandingPage.tsx" style={{
+        display: "none"
+      }}>
           <span className="text-sm font-medium text-gray-700 flex items-center" data-magicpath-id="16" data-magicpath-path="LandingPage.tsx">
             <span className="mr-2" data-magicpath-id="17" data-magicpath-path="LandingPage.tsx">🖼️</span>
             Made in Framer
