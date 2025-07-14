@@ -39,7 +39,13 @@ export const LandingPage: React.FC = () => {
           scale: 1.02
         }} whileTap={{
           scale: 0.98
-        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">Join Waitlist</motion.button>
+        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx" style={{
+          background: "#f9f363",
+          color: "#1f1f1f",
+          fontFamily: "Space Grotesk",
+          textAlign: "center",
+          justifyContent: "center"
+        }}>Join Waitlist</motion.button>
         </nav>
       </header>
 
@@ -58,7 +64,9 @@ export const LandingPage: React.FC = () => {
         }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx" style={{
           fontFamily: "Crimson Text",
           fontSize: "130px",
-          color: "#1f1f1f"
+          color: "#1f1f1f",
+          fontWeight: "400",
+          fontStyle: "normal"
         }}>Read between the lines<br data-magicpath-id="11" data-magicpath-path="LandingPage.tsx" />Read between the lines</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
@@ -77,13 +85,12 @@ export const LandingPage: React.FC = () => {
           scale: 0.98
         }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx" style={{
           background: "#f9f363",
-          color: "#1f1f1f"
+          color: "#1f1f1f",
+          fontFamily: "Space Grotesk"
         }}>
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" data-magicpath-id="13" data-magicpath-path="LandingPage.tsx">
               <Frown className="w-6 h-6 text-purple-900" data-magicpath-id="14" data-magicpath-path="LandingPage.tsx" />
-            </div>
-            Get Support
-          </motion.button>
+            </div>Join Waitlist</motion.button>
         </div>
       </main>
 
