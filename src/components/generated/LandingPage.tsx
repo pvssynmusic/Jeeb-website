@@ -6,7 +6,9 @@ export const LandingPage: React.FC = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-6" data-magicpath-id="1" data-magicpath-path="LandingPage.tsx">
         <nav className="flex items-center justify-between max-w-7xl mx-auto" style={{
-        background: "#2f332a00"
+        background: "#2f332a00",
+        paddingTop: "",
+        marginTop: "10px"
       }} data-magicpath-id="2" data-magicpath-path="LandingPage.tsx">
           {/* Logo */}
           <motion.div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center" whileHover={{
@@ -68,7 +70,8 @@ export const LandingPage: React.FC = () => {
           fontSize: "130px",
           color: "#1f1f1f",
           fontWeight: "400",
-          fontStyle: "normal"
+          fontStyle: "normal",
+          marginTop: "60px"
         }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">Read between the lines.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
@@ -91,7 +94,7 @@ export const LandingPage: React.FC = () => {
           fontFamily: "Space Grotesk",
           paddingTop: "",
           height: "80px",
-          marginTop: "60px"
+          marginTop: "100px"
         }} data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
