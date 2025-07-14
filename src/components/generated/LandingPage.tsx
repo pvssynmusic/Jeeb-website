@@ -49,7 +49,7 @@ export const LandingPage: React.FC = () => {
           fontFamily: "Space Grotesk",
           textAlign: "center",
           justifyContent: "center"
-        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">Join Waitlist</motion.button>
+        }} data-magicpath-id="7" data-magicpath-path="LandingPage.tsx">Sign Up</motion.button>
         </nav>
       </header>
 
@@ -67,11 +67,11 @@ export const LandingPage: React.FC = () => {
           ease: "easeOut"
         }} style={{
           fontFamily: "Crimson Text",
-          fontSize: "130px",
           color: "#1f1f1f",
           fontWeight: "400",
           fontStyle: "normal",
-          marginTop: "60px"
+          marginTop: "60px",
+          fontSize: "160px"
         }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">Read between the <em data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">lines</em>.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
@@ -92,12 +92,15 @@ export const LandingPage: React.FC = () => {
           background: "#f9f363",
           color: "#1f1f1f",
           fontFamily: "Space Grotesk",
-          paddingTop: "",
           height: "100px",
           marginTop: "100px",
-          fontSize: "28px",
-          paddingLeft: "60px",
-          paddingRight: "60px"
+          paddingTop: "60px",
+          paddingLeft: "70px",
+          paddingRight: "70px",
+          paddingBottom: "60px",
+          fontSize: "36px",
+          fontWeight: "400",
+          fontStyle: "normal"
         }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
