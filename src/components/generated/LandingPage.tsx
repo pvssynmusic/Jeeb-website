@@ -5,14 +5,20 @@ export const LandingPage: React.FC = () => {
   return <div className="min-h-screen bg-pink-50 relative overflow-hidden" data-magicpath-id="0" data-magicpath-path="LandingPage.tsx">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-6" data-magicpath-id="1" data-magicpath-path="LandingPage.tsx">
-        <nav className="flex items-center justify-between max-w-7xl mx-auto" data-magicpath-id="2" data-magicpath-path="LandingPage.tsx">
+        <nav className="flex items-center justify-between max-w-7xl mx-auto" data-magicpath-id="2" data-magicpath-path="LandingPage.tsx" style={{
+        background: "#2f332a00"
+      }}>
           {/* Logo */}
           <motion.div className="w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center" whileHover={{
           scale: 1.05
         }} whileTap={{
           scale: 0.95
-        }} data-magicpath-id="3" data-magicpath-path="LandingPage.tsx">
-            <Asterisk className="w-6 h-6 text-pink-50" data-magicpath-id="4" data-magicpath-path="LandingPage.tsx" />
+        }} data-magicpath-id="3" data-magicpath-path="LandingPage.tsx" style={{
+          background: "#faf463"
+        }}>
+            <Asterisk className="w-6 h-6 text-pink-50" data-magicpath-id="4" data-magicpath-path="LandingPage.tsx" style={{
+            background: "#1f1f1f"
+          }} />
           </motion.div>
 
           {/* Navigation Links */}
@@ -50,9 +56,9 @@ export const LandingPage: React.FC = () => {
           duration: 0.8,
           ease: "easeOut"
         }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx" style={{
-          color: "oklch(75.72% 0.16 108.53deg)",
           fontFamily: "Crimson Text",
-          fontSize: "130px"
+          fontSize: "130px",
+          color: "#1f1f1f"
         }}>Read between the lines<br data-magicpath-id="11" data-magicpath-path="LandingPage.tsx" />Read between the lines</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
@@ -69,7 +75,10 @@ export const LandingPage: React.FC = () => {
           scale: 1.02
         }} whileTap={{
           scale: 0.98
-        }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx">
+        }} data-magicpath-id="12" data-magicpath-path="LandingPage.tsx" style={{
+          background: "#f9f363",
+          color: "#1f1f1f"
+        }}>
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" data-magicpath-id="13" data-magicpath-path="LandingPage.tsx">
               <Frown className="w-6 h-6 text-purple-900" data-magicpath-id="14" data-magicpath-path="LandingPage.tsx" />
             </div>
