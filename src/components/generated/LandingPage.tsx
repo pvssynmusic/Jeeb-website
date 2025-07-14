@@ -93,8 +93,11 @@ export const LandingPage: React.FC = () => {
           color: "#1f1f1f",
           fontFamily: "Space Grotesk",
           paddingTop: "",
-          height: "80px",
-          marginTop: "100px"
+          height: "100px",
+          marginTop: "100px",
+          fontSize: "28px",
+          paddingLeft: "60px",
+          paddingRight: "60px"
         }} data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
@@ -127,12 +130,12 @@ export const LandingPage: React.FC = () => {
 
       {/* Mobile Navigation Menu (hidden by default, can be toggled) */}
       <div className="md:hidden fixed top-20 left-6 right-6 z-40" data-magicpath-id="18" data-magicpath-path="LandingPage.tsx">
-        <div className="bg-white rounded-2xl shadow-lg p-4 space-y-2" data-magicpath-id="19" data-magicpath-path="LandingPage.tsx" style={{
+        <div className="bg-white rounded-2xl shadow-lg p-4 space-y-2" style={{
         display: "none"
-      }}>
-          {['About', 'Services', 'Blog', 'FAQ'].map(item => <button key={item} className="w-full px-4 py-3 text-purple-900 font-medium rounded-xl hover:bg-pink-50 transition-colors text-left" data-magicpath-id="20" data-magicpath-path="LandingPage.tsx" style={{
+      }} data-magicpath-id="19" data-magicpath-path="LandingPage.tsx">
+          {['About', 'Services', 'Blog', 'FAQ'].map(item => <button key={item} className="w-full px-4 py-3 text-purple-900 font-medium rounded-xl hover:bg-pink-50 transition-colors text-left" style={{
           display: "none"
-        }}>
+        }} data-magicpath-id="20" data-magicpath-path="LandingPage.tsx">
               {item}
             </button>)}
         </div>
