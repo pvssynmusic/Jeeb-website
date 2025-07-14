@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Frown } from 'lucide-react';
-
-// Custom SVG Logo Component
-const CustomLogo: React.FC = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" className="w-full h-full">
-    <path d="M110,10 L115,30 L130,15 L135,40 L155,25 L150,50 L170,40 L160,65 L180,60 L170,85 L185,90 L170,110 L185,120 L165,130 L175,150 L150,145 L155,170 L130,160 L130,185 L110,175 L110,200 L90,185 L85,210 L65,190 L60,215 L50,190 L45,215 L30,185 L20,210 L10,180 L0,190 L5,160 L-10,170 L0,145 L-15,140 L0,120 L-10,110 L10,100 L0,80 L20,85 L10,60 L30,65 L20,40 L45,50 L40,20 L65,30 L60,0 L90,15 Z" fill="currentColor" />
-  </svg>;
+import { WaitlistModal } from '../WaitlistModal';
+// Logo Component using your custom image
+const CustomLogo: React.FC = () => <img 
+    src="/logo.png" 
+    alt="Custom Logo" 
+    className="w-full h-full object-contain"
+  />;
 export const LandingPage: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return <div className="min-h-screen bg-pink-50 relative overflow-hidden">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 p-6">
@@ -51,7 +55,7 @@ export const LandingPage: React.FC = () => {
           fontFamily: "Space Grotesk",
           textAlign: "center",
           justifyContent: "center"
-        }}>Sign Up</motion.button>
+        }} onClick={() => setIsModalOpen(true)}>Sign Up</motion.button>
         </nav>
       </header>
 
@@ -89,7 +93,11 @@ export const LandingPage: React.FC = () => {
         }} whileHover={{
           scale: 1.02
         }} whileTap={{
-          scale: 0.98
+          scale: 0.92,
+          transition: {
+            duration: 0.1,
+            ease: "easeInOut"
+          }
         }} style={{
           background: "#f9f363",
           color: "#1f1f1f",
@@ -102,8 +110,8 @@ export const LandingPage: React.FC = () => {
           paddingBottom: "40px",
           paddingLeft: "60px",
           paddingRight: "60px",
-          marginTop: "50px"
-        }}>
+          marginTop: "90px"
+        }} onClick={() => setIsModalOpen(true)}>
             <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mr-4" style={{
             display: "none"
           }}>
@@ -145,5 +153,8 @@ export const LandingPage: React.FC = () => {
             </button>)}
         </div>
       </div>
+
+      {/* Waitlist Modal */}
+      <WaitlistModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>;
 };
