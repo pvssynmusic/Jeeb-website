@@ -66,12 +66,12 @@ export const LandingPage: React.FC = () => {
           duration: 0.8,
           ease: "easeOut"
         }} style={{
-          fontFamily: "Crimson Text",
           color: "#1f1f1f",
           fontWeight: "400",
           fontStyle: "normal",
           marginTop: "60px",
-          fontSize: "160px"
+          fontFamily: "Crimson Text",
+          fontSize: "170px"
         }} data-magicpath-id="10" data-magicpath-path="LandingPage.tsx">Read between the <em data-magicpath-id="11" data-magicpath-path="LandingPage.tsx">lines</em>.</motion.h1>
 
           <motion.button className="inline-flex items-center px-12 py-6 bg-purple-900 text-pink-50 rounded-full text-2xl font-semibold hover:bg-purple-800 transition-colors shadow-lg" initial={{
