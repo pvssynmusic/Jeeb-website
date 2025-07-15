@@ -66,6 +66,29 @@ src/
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
+## Deployment
+
+This project is automatically deployed to GitHub Pages at [jeeb.app](https://jeeb.app) using GitHub Actions.
+
+### Custom Domain Setup
+
+The site uses a custom domain configured through:
+- `public/CNAME` file containing `jeeb.app`
+- GitHub repository settings with custom domain enabled
+- Automatic deployment via GitHub Actions workflow
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The built files will be in the `dist/` directory
+3. Deploy the contents of `dist/` to your hosting provider
+
 ## License
 
 MIT License - feel free to use this project for your own purposes!
