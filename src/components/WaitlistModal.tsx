@@ -26,6 +26,11 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
     setError('');
     
     try {
+      // Check if Firebase is properly configured
+      if (!db) {
+        throw new Error('Firebase is not configured');
+      }
+      
       await addDoc(collection(db, 'waitlist'), {
         ...formData,
         timestamp: serverTimestamp(),
@@ -41,7 +46,17 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
       }, 2000);
     } catch (err) {
       console.error('Error adding to waitlist:', err);
-      setError('Something went wrong. Please try again.');
+      if (err instanceof Error) {
+        if (err.message.includes('Firebase is not configured')) {
+          setError('Service temporarily unavailable. Please try again later.');
+        } else if (err.message.includes('permission-denied')) {
+          setError('Access denied. Please check your connection and try again.');
+        } else {
+          setError('Something went wrong. Please try again.');
+        }
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
     } finally {
       setIsLoading(false);
     }
